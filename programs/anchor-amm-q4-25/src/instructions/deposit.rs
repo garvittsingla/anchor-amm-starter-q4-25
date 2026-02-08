@@ -10,53 +10,53 @@ use crate::{errors::AmmError, state::Config};
 #[derive(Accounts)]
 pub struct Deposit<'info> {
     #[account(mut)]
-    pub user: Signer<'info>,
-    pub mint_x: Account<'info, Mint>,
-    pub mint_y: Account<'info, Mint>,
+    pub user: Signer<'info>, //deposits the tokens
+    pub mint_x: Account<'info, Mint>, //mint account of token x
+    pub mint_y: Account<'info, Mint>, //mint account of token y
     #[account(
-        has_one = mint_x,
+        has_one = mint_x, 
         has_one = mint_y,
         seeds = [b"config", config.seed.to_le_bytes().as_ref()],
         bump = config.config_bump,
     )]
-    pub config: Account<'info, Config>,
+    pub config: Account<'info, Config>, //config account for the pool that the user wants to deposit into
     #[account(
         mut,
         seeds = [b"lp", config.key().as_ref()],
         bump = config.lp_bump,
     )]
-    pub mint_lp: Account<'info, Mint>,
+    pub mint_lp: Account<'info, Mint>, //tokens to give the user for provifing liquidity
     #[account(
         mut,
         associated_token::mint = mint_x,
         associated_token::authority = config,
     )]
-    pub vault_x: Account<'info, TokenAccount>,
+    pub vault_x: Account<'info, TokenAccount>, //vault owned by the program to hold token x
     #[account(
         mut,
         associated_token::mint = mint_y,
         associated_token::authority = config,
     )]
-    pub vault_y: Account<'info, TokenAccount>,
+    pub vault_y: Account<'info, TokenAccount>, //vault owned by the program to hold token y
     #[account(
         mut,
         associated_token::mint = mint_x,
         associated_token::authority = user,
     )]
-    pub user_x: Account<'info, TokenAccount>,
+    pub user_x: Account<'info, TokenAccount>, //ata token account owned by the user to send token x from
     #[account(
         mut,
         associated_token::mint = mint_y,
         associated_token::authority = user,
     )]
-    pub user_y: Account<'info, TokenAccount>,
+    pub user_y: Account<'info, TokenAccount>, //ata token account owned by the user to send token y from
     #[account(
         init_if_needed,
         payer = user,
         associated_token::mint = mint_lp,
         associated_token::authority = user,
     )]
-    pub user_lp: Account<'info, TokenAccount>,
+    pub user_lp: Account<'info, TokenAccount>,  //ata token account owned by the user to receive the lp tokens, initialized if it doesn't exist
     pub token_program: Program<'info, Token>,
     pub system_program: Program<'info, System>,
     pub associated_token_program: Program<'info, AssociatedToken>,

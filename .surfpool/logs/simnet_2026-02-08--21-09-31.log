@@ -1,0 +1,38 @@
+[2026-02-08--21-09-31 INFO actix_server::builder] starting 5 workers
+[2026-02-08--21-09-31 INFO actix_server::server] Tokio runtime found; starting in existing Tokio runtime
+[2026-02-08--21-09-31 INFO actix_server::server] starting service: "actix-web-service-127.0.0.1:18488", workers: 5, listening on: 127.0.0.1:18488
+[2026-02-08--21-09-33 INFO parity_ws] Listening for new connections on 127.0.0.1:8900.
+[2026-02-08--21-09-35 INFO txtx::svm::deploy_program] [Recovery Instructions] - An ephemeral authority account will be created and funded to write to the buffer account.
+[2026-02-08--21-09-35 INFO txtx::svm::deploy_program] [Recovery Instructions] - Please save the following information in case the deployment fails and the account needs to be recovered:
+[2026-02-08--21-09-35 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority public key: 53K9iGfZv869DgMK1omo3cmPTiBCdqeoP3h19V42Uke2
+[2026-02-08--21-09-35 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority secret key: [169, 152, 85, 36, 122, 115, 173, 202, 96, 18, 38, 127, 160, 100, 253, 124, 87, 253, 254, 21, 58, 40, 203, 218, 164, 12, 108, 183, 78, 35, 236, 63, 60, 6, 110, 139, 180, 57, 201, 136, 18, 222, 61, 240, 50, 159, 210, 203, 136, 84, 20, 237, 70, 171, 180, 186, 1, 176, 52, 201, 34, 240, 56, 151]
+[2026-02-08--21-09-35 INFO txtx::svm::deploy_program] Account Created - Ephemeral authority account created and funded to write to buffer
+[2026-02-08--21-09-35 INFO txtx::svm::deploy_program] [Recovery Instructions] - Creating program buffer account at pubkey 8G4E8sqnsN7hTa4UUPrZtjzPZhqVqTiCguwJekdPh2Yj
+[2026-02-08--21-09-36 INFO txtx::svm::deploy_program] Account Created - Program buffer account created
+[2026-02-08--21-09-39 INFO txtx::svm::deploy_program] Buffer Ready - Writing to buffer account is complete
+[2026-02-08--21-09-40 INFO txtx::svm::deploy_program] Program Created - Program CmgtaxHh95mp6kAtPMij6CcbMybww13uSySgQvS8WusW has been deployed
+[2026-02-08--21-09-41 INFO txtx::svm::deploy_program] Complete - Ephemeral authority account closed and leftover funds returned to payer
+[2026-02-08--21-09-55 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:56625.
+[2026-02-08--21-10-08 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:56836.
+[2026-02-08--21-10-12 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:56841.
+[2026-02-08--21-11-19 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:56881.
+[2026-02-08--21-11-35 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:57144.
+[2026-02-08--21-11-38 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:57151.
+[2026-02-08--21-11-39 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:57155.
+[2026-02-08--21-11-39 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:57157.
+[2026-02-08--21-12-16 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:57187.
+[2026-02-08--21-12-32 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:57465.
+[2026-02-08--21-12-35 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:57470.
+[2026-02-08--21-12-36 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:57473.
+[2026-02-08--21-12-37 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:57475.
+[2026-02-08--21-19-19 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:57813.
+[2026-02-08--21-19-37 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:58107.
+[2026-02-08--21-19-40 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:58113.
+[2026-02-08--21-19-41 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:58116.
+[2026-02-08--21-19-41 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:58118.
+[2026-02-08--21-21-26 INFO actix_server::accept] accept thread stopped
+[2026-02-08--21-21-26 INFO actix_server::worker] shutting down idle worker
+[2026-02-08--21-21-26 INFO actix_server::worker] shutting down idle worker
+[2026-02-08--21-21-26 INFO actix_server::worker] shutting down idle worker
+[2026-02-08--21-21-26 INFO actix_server::worker] shutting down idle worker
+[2026-02-08--21-21-26 INFO actix_server::worker] shutting down idle worker
